@@ -38,19 +38,18 @@ p {
   display: flex;
   flex-direction: column;
   margin: 20px auto;
-
   justify-content: space-around;
   max-width: 300px;
   min-height: 120px;
 }
 
-#upload-image,
 .upload-form label {
   padding: 10px 0 10px 10px;
+  font-size: 18px;
 }
 
-.upload-form label {
-  font-size: 18px;
+#upload-image {
+  padding: 10px 0;
 }
 
 .upload-btn {
@@ -60,16 +59,60 @@ p {
   border-radius: 10px;
   width: min-content;
   padding: 5px 20px 5px;
-  margin: 5px auto;
+  margin: 0 auto 10px;
   cursor: pointer;
-
   transition: .5s ease;
+  display: block;
+}
 
+.disabled {
+  display: none;
 }
 
 .upload-btn:hover {
-
-
   background-color: var(--btn-bg-hover);
-  /* transition: 1s ease-out; */
+}
+
+#output {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.file-wrapper {
+  /* width: 300px;
+  height: 400px; */
+  position: relative;
+}
+
+.file-wrapper img {
+  display: block;
+  height: 250px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  display: none;
+  border: 2px solid #fefefe;
+  border-radius: 20px;
+}
+
+.file-wrapper:hover .delete-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: red;
+  display: block;
+  font-size: 16px;
+  padding: 0;
 }
