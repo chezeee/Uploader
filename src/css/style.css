@@ -1,0 +1,75 @@
+@import "./loader.css";
+
+:root {
+
+  /* Upload form */
+  --form-bg: rgb(244, 244, 244);
+  --form-border: rgb(209, 209, 209);
+
+  /* Upload button */
+  --btn-bg: rgb(52, 185, 52);
+  --btn-textColor: aliceblue;
+
+  /* Upload button hover */
+  --btn-bg-hover: rgb(42, 152, 42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.upload-form {
+  background-color: var(--form-bg);
+  border: 1px solid var(--form-border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+
+  justify-content: space-around;
+  max-width: 300px;
+  min-height: 120px;
+}
+
+#upload-image,
+.upload-form label {
+  padding: 10px 0 10px 10px;
+}
+
+.upload-form label {
+  font-size: 18px;
+}
+
+.upload-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-textColor);
+  border: 0;
+  border-radius: 10px;
+  width: min-content;
+  padding: 5px 20px 5px;
+  margin: 5px auto;
+  cursor: pointer;
+
+  transition: .5s ease;
+
+}
+
+.upload-btn:hover {
+
+
+  background-color: var(--btn-bg-hover);
+  /* transition: 1s ease-out; */
+}
